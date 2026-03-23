@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import heroImg from "../assets/hero.png";
+import heroImg from "../assets/profile_image_head_shot_linkedin.jpg";
 import { ref, onMounted, onUnmounted } from "vue";
 
 const scrolled = ref(false);
@@ -30,12 +30,13 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
   <section id="hero" class="hero-section">
     <div class="hero-inner">
       <div class="hero-text">
-        <p class="eyebrow">Principal Solution Engineer · Salesforce</p>
+        <p class="eyebrow">Engineer · Sales · Strategy</p>
         <h1>Jeremy B. Marcus</h1>
         <p class="hero-sub">
-          Bridging technical complexity and business value in commerce.
-          Specializing in Salesforce Commerce Cloud, headless architecture, and
-          unified B2B/B2C experiences.
+          Full-stack software engineer turned enterprise sales and solutions
+          architect. Translating complex technical systems—from LLM-powered
+          applications to large-scale SaaS platforms—into clear business
+          outcomes.
         </p>
         <div class="hero-actions">
           <a href="#connect" class="btn-primary">Get in touch</a>
@@ -56,18 +57,19 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
       <h2>Making complex systems feel simple</h2>
       <div class="about-body">
         <p>
-          I'm a Principal Solution Engineer at Salesforce with deep roots in the
+          I'm a full-stack software engineer and former Principal Solution
+          Engineer at Salesforce, where I spent 9 years working across the
           e-commerce and SaaS ecosystems. My career spans Salesforce, Demandware
           (now Salesforce Commerce Cloud), and Vendasta—where I've focused on
-          building and scaling modern commerce solutions that connect complex
+          building and scaling modern enterprise solutions that connect complex
           backend architectures to seamless consumer experiences.
         </p>
         <p>
-          I thrive in the space between technical teams and business
-          stakeholders, translating hard engineering problems into clear value
-          for customers. Whether it's architecting a headless checkout flow or
-          enabling a partner channel at scale, I care about getting the details
-          right.
+          Increasingly, that work lives at the intersection of AI and enterprise
+          software—building agentic systems, RAG pipelines, and LLM-powered
+          automation that actually ships. I care about getting the details
+          right, whether that's a production ML pipeline or a sales demo that
+          closes.
         </p>
       </div>
     </div>
@@ -89,16 +91,15 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
               stroke-linecap="round"
               stroke-linejoin="round"
             >
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
-              <line x1="3" y1="6" x2="21" y2="6" />
-              <path d="M16 10a4 4 0 0 1-8 0" />
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
             </svg>
           </div>
-          <h3>Salesforce Commerce Cloud</h3>
+          <h3>Full-Stack Development</h3>
           <p>
-            Deep expertise in SFCC (formerly Demandware)—checkout APIs,
-            extensibility, platform architecture, and enterprise deployment
-            patterns.
+            End-to-end engineering across the stack—Java, React, Vue, Node.js,
+            and TypeScript on the frontend; REST and GraphQL APIs, cloud
+            infrastructure, and CI/CD on the back.
           </p>
         </div>
         <div class="card">
@@ -111,13 +112,16 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
               stroke-linecap="round"
               stroke-linejoin="round"
             >
-              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              <path
+                d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+              />
             </svg>
           </div>
-          <h3>Headless & Composable Commerce</h3>
+          <h3>Stakeholder Alignment</h3>
           <p>
-            Designing modern, API-first storefronts using Lightning Web Runtime
-            (LWR) and public APIs—flexibility without sacrificing performance.
+            Uncovering what success actually looks like across the room—
+            translating competing priorities from technical, business, and
+            executive stakeholders into a shared direction.
           </p>
         </div>
         <div class="card">
@@ -160,10 +164,36 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
               <line x1="12" y1="13" x2="12" y2="15" />
             </svg>
           </div>
-          <h3>Systems Integration</h3>
+          <h3>Enterprise Integration Architecture</h3>
           <p>
-            Connecting commerce platforms with ERP, OMS, CRM, and marketing
-            systems to build seamless, end-to-end customer experiences.
+            Designing scalable integration strategies across complex enterprise
+            landscapes—connecting SaaS platforms, ERPs, CRMs, and data systems
+            into cohesive, maintainable architectures.
+          </p>
+        </div>
+        <div class="card card-ai">
+          <div class="card-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M12 2a4 4 0 0 1 4 4v1h1a3 3 0 0 1 0 6h-1v1a4 4 0 0 1-8 0v-1H7a3 3 0 0 1 0-6h1V6a4 4 0 0 1 4-4z"
+              />
+              <line x1="9" y1="12" x2="9" y2="12.01" />
+              <line x1="12" y1="10" x2="12" y2="10.01" />
+              <line x1="15" y1="12" x2="15" y2="12.01" />
+            </svg>
+          </div>
+          <h3>AI & Agentic Engineering</h3>
+          <p>
+            Building LLM-powered products and agentic workflows—RAG pipelines,
+            tool-using agents, and ML-driven automation that goes from prototype
+            to production.
           </p>
         </div>
       </div>
@@ -226,6 +256,67 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
     </div>
   </section>
 
+  <!-- Technical Skills -->
+  <section class="section section-alt">
+    <div class="container">
+      <span class="section-label">Technical Skills</span>
+      <h2>What's in the toolkit</h2>
+      <div class="skills-section">
+        <div class="skill-group">
+          <p class="skill-group-label">Languages</p>
+          <div class="skill-tags">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">HTML / CSS</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">Frameworks & Libraries</p>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Vue</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Express</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">APIs & Architecture</p>
+          <div class="skill-tags">
+            <span class="skill-tag">REST</span>
+            <span class="skill-tag">GraphQL</span>
+            <span class="skill-tag">Webhooks</span>
+            <span class="skill-tag">Microservices</span>
+            <span class="skill-tag">Headless Architecture</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">Platforms & Tools</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Salesforce</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Docker</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">AI & Machine Learning</p>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-ai">LLMs</span>
+            <span class="skill-tag skill-tag-ai">RAG Pipelines</span>
+            <span class="skill-tag skill-tag-ai">Agentic Engineering</span>
+            <span class="skill-tag skill-tag-ai">OpenAI API</span>
+            <span class="skill-tag skill-tag-ai">LangChain</span>
+            <span class="skill-tag skill-tag-ai">ML Automation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Connect -->
   <section id="connect" class="section section-alt">
     <div class="container connect-container">
@@ -276,11 +367,27 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
     </div>
   </section>
 
+  <!-- Off the Clock -->
+  <section class="section">
+    <div class="container">
+      <span class="section-label">Off the Clock</span>
+      <h2>When I'm not in front of a screen</h2>
+      <p class="about-body" style="max-width: 620px">
+        You'll find me deep sea fishing or wine tasting—never during work hours,
+        of course.
+      </p>
+      <div class="hobbies">
+        <div class="hobby-chip"><span>🎣</span> Deep Sea Fishing</div>
+        <div class="hobby-chip"><span>🍷</span> Wine Tasting</div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <span>© 2025 Jeremy B. Marcus</span>
-      <span class="footer-role">Principal Solution Engineer · Salesforce</span>
+      <span class="footer-role">Principal Solution Engineer</span>
     </div>
   </footer>
 </template>
@@ -536,9 +643,14 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
 /* ── Cards ───────────────────────────────────────────────── */
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 20px;
   margin-top: 8px;
+}
+
+.card-ai {
+  border-color: var(--accent-border);
+  background: var(--accent-light);
 }
 
 .card {
@@ -770,6 +882,76 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
 .connect-card-text span {
   font-size: 13px;
   color: var(--text-light);
+}
+
+/* ── Technical Skills ────────────────────────────────────── */
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 8px;
+}
+
+.skill-group-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin: 0 0 12px 0;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-h);
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+
+.skill-tag:hover {
+  border-color: var(--accent-border);
+  background: var(--accent-light);
+}
+
+.skill-tag-ai {
+  border-color: var(--accent-border);
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+/* ── Hobbies ─────────────────────────────────────────────── */
+.hobbies {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.hobby-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: var(--accent-light);
+  border: 1px solid var(--accent-border);
+  border-radius: 99px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-h);
 }
 
 /* ── Footer ──────────────────────────────────────────────── */
