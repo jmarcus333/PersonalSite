@@ -60,9 +60,9 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
           I'm a full-stack software engineer and former Principal Solution
           Engineer at Salesforce, where I spent 9 years working across the
           e-commerce and SaaS ecosystems. My career spans Salesforce, Demandware
-          (now Salesforce Commerce Cloud), and Vendasta—where I've focused on
-          building and scaling modern enterprise solutions that connect complex
-          backend architectures to seamless consumer experiences.
+          (now Agentforce Commerce), and Vendasta—where I've focused on building
+          and scaling modern enterprise solutions that connect complex backend
+          architectures to consumer experiences.
         </p>
         <p>
           Increasingly, that work lives at the intersection of AI and enterprise
@@ -143,8 +143,7 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
           <h3>Solution Engineering</h3>
           <p>
             Bridging technical complexity with business value—crafting unified
-            B2B and B2C solutions that solve real problems and move deals
-            forward.
+            B2B and B2C solutions that solve problems and move deals forward.
           </p>
         </div>
         <div class="card">
@@ -168,7 +167,7 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
           <p>
             Designing scalable integration strategies across complex enterprise
             landscapes—connecting SaaS platforms, ERPs, CRMs, and data systems
-            into cohesive, maintainable architectures.
+            into maintainable architectures.
           </p>
         </div>
         <div class="card card-ai">
@@ -306,11 +305,11 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
           <p class="skill-group-label">AI & Machine Learning</p>
           <div class="skill-tags">
             <span class="skill-tag skill-tag-ai">LLMs</span>
-            <span class="skill-tag skill-tag-ai">RAG Pipelines</span>
+            <span class="skill-tag skill-tag-ai"
+              >RAG Pipelines, Vector Databases</span
+            >
             <span class="skill-tag skill-tag-ai">Agentic Engineering</span>
-            <span class="skill-tag skill-tag-ai">OpenAI API</span>
             <span class="skill-tag skill-tag-ai">LangChain</span>
-            <span class="skill-tag skill-tag-ai">ML Automation</span>
           </div>
         </div>
       </div>
